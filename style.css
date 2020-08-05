@@ -1,0 +1,111 @@
+
+
+body {
+    background: #008000;
+
+}
+
+.carta {
+    width: 350px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px 0.7px rgba(0, 0, 0, 0.205);
+    margin: 20px auto;
+    text-align: center;
+}
+
+#numero {
+    position: relative;
+    top: 70px;
+    font-size: 16em;
+}
+
+.corazon,
+.diamante {
+    color: red;
+}
+
+/************** DIAMANTE ****************/
+
+.diamante .numero::before {
+    content: "\2666";
+    font-size: 0.4em;
+    position: relative;
+    top: -205px;
+    left: 0px;
+    display: inline-block;
+}
+
+.diamante .numero::after {
+    content: "\2666";
+    font-size: 0.4em;
+    position: relative;
+    bottom: -160px;
+    right: 0px;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+/************** CORAZON ****************/
+
+
+.corazon .numero::before {
+    content: "\2665";
+    font-size: 0.4em;
+    position: relative;
+    top: -205px;
+    left: 0px;
+}
+
+.corazon .numero::after {
+    content: "\2665";
+    font-size: 0.4em;
+    position: relative;
+    bottom: -160px;
+    right: 0px;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+/************** PICA ****************/
+
+.pica .numero::before {
+    content: "\2660";
+    font-size: 0.4em;
+    position: relative;
+    top: -205px;
+    left: 0px;
+}
+
+.pica .numero::after {
+    content: "\2660";
+    font-size: 0.4em;
+    position: relative;
+    bottom: -160px;
+    right: 0px;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+/************** TREBOL ****************/
+
+.trebol .numero::before {
+    content: "\2663";
+    font-size: 0.4em;
+    position: relative;
+    top: -230px;
+    left: -7px;
+    display: inline-block;
+
+}
+
+.trebol .numero::after {
+    content: "\2663";
+    font-size: 0.4em;
+    position: relative;
+    bottom: -190px;
+    right: -15px;
+    transform: rotate(180deg);
+    display: inline-block;
+}
