@@ -1,108 +1,124 @@
-body {
-    background: #008000;
+ body {
+     background: #008000;
 
-}
+ }
 
-.carta {
-    width: 350px;
-    height: 500px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 4px 4px 2px 0.7px rgba(0, 0, 0, 0.205);
-    margin: 20px auto;
-    text-align: center;
-}
+ .carta {
+     width: 350px;
+     height: 500px;
+     background: #ffffff;
+     border-radius: 20px;
+     box-shadow: 4px 4px 2px 0.7px rgba(0, 0, 0, 0.205);
+     margin: 20px auto;
+ }
 
-#numero {
-    position: relative;
-    top: 70px;
-    font-size: 16em;
-}
+ #medio {
+     height: 60%;
+     width: 100%;
+     display: block;
+     text-align: center;
+ }
 
-/************** DIAMANTE ****************/
+ #numero {
+     font-size: 16em;
+     padding: 0;
+ }
 
-.diamante .numero::before {
-    content: "\2666";
-    font-size: 0.4em;
-    position: relative;
-    top: -205px;
-    left: 0px;
-    display: inline-block;
-    color: red;
-}
+ #picaArriba {
+     width: 100%;
+     height: 20%;
+     display: block;
+ }
 
-.diamante .numero::after {
-    content: "\2666";
-    font-size: 0.4em;
-    position: relative;
-    bottom: -160px;
-    right: 0px;
-    transform: rotate(180deg);
-    display: inline-block;
-    color: red;
-}
-
-/************** CORAZON ****************/
+ #picaAbajo {
+     width: 100%;
+     height: 20%;
+     display: block;
+ }
 
 
-.corazon .numero::before {
-    content: "\2665";
-    font-size: 0.4em;
-    position: relative;
-    top: -205px;
-    left: 0px;
-    color: red;
-}
+ /************** DIAMANTE ****************/
 
-.corazon .numero::after {
-    content: "\2665";
-    font-size: 0.4em;
-    position: relative;
-    bottom: -160px;
-    right: 0px;
-    transform: rotate(180deg);
-    display: inline-block;
-    color: red;
-}
+ .diamante .pica1::before {
+     content: "\2666";
+     font-size: 7em;
+     position: relative;
+     top: -10px;
+     left: 10px;
+     color: red;
+ }
 
-/************** PICA ****************/
+ .diamante .pica2::after {
+     content: "\2666";
+     font-size: 7em;
+     position: relative;
+     left: 75%;
+     bottom: 10px;
+     transform: rotate(180deg);
+     display: inline-block;
+     color: red;
+ }
 
-.pica .numero::before {
-    content: "\2660";
-    font-size: 0.4em;
-    position: relative;
-    top: -205px;
-    left: 0px;
-}
+ /************** CORAZON ****************/
 
-.pica .numero::after {
-    content: "\2660";
-    font-size: 0.4em;
-    position: relative;
-    bottom: -160px;
-    right: 0px;
-    transform: rotate(180deg);
-    display: inline-block;
-}
 
-/************** TREBOL ****************/
+ .corazon .pica1::before {
+     content: "\2665";
+     font-size: 7em;
+     position: relative;
+     top: -10px;
+     left: 10px;
+     color: red;
+ }
 
-.trebol .numero::before {
-    content: "\2663";
-    font-size: 0.4em;
-    position: relative;
-    top: -230px;
-    left: -7px;
-    display: inline-block;
+ .corazon .pica2::after {
+     content: "\2665";
+     font-size: 7em;
+     position: relative;
+     left: 75%;
+     bottom: 10px;
+     transform: rotate(180deg);
+     display: inline-block;
+     color: red;
+ }
 
-}
+ /************** PICA ****************/
 
-.trebol .numero::after {
-    content: "\2663";
-    font-size: 0.4em;
-    position: relative;
-    bottom: -190px;
-    right: -15px;
-    transform: rotate(180deg);
-    display: inline-block;
-}
+ .pica .pica1::before {
+     content: "\2660";
+     font-size: 7em;
+     position: relative;
+     top: -10px;
+     left: 10px;
+ }
+
+ .pica .pica2::after {
+     content: "\2660";
+     font-size: 7em;
+     position: relative;
+     left: 75%;
+     bottom: 10px;
+     transform: rotate(180deg);
+     display: inline-block;
+ }
+
+ /************** TREBOL ****************/
+
+ .trebol .pica1::before {
+     content: "\2663";
+     font-size: 7em;
+     position: relative;
+     top: -10px;
+     left: 10px;
+
+ }
+
+ .trebol .pica2::after {
+     content: "\2663";
+     font-size: 7em;
+     position: relative;
+     left: 75%;
+     bottom: 10px;
+     transform: rotate(180deg);
+     display: inline-block;
+ }
